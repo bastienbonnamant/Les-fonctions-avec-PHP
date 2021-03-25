@@ -1,9 +1,17 @@
-<?php
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+     <?php
 
-function writeSecretSentence(string $cat, string $dog) :string{
-    return $cat < $dog;
+function writeSecretSentence(string $cat, string $dog) : string {
+    $secretSentence = "$cat bat le $dog";
+    return $secretSentence;
 };
 
-    echo writeSecretSentence();
+    echo writeSecretSentence("cat", "dog");
 
-?>
+?> 
+  </body>
+</html>
